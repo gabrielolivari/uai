@@ -1,31 +1,51 @@
-header ul {
-  margin: 50px 0;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
 }
 
-header ul li {
-  display: inline-block;
-  padding: 0 10px;
+header nav {
+    display: inline-block;
 }
 
+header nav ul {
+    margin: 50px 0;
+}
+  
+header nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+header nav ul li a {
+    color: #f15a08;
+}
+  
 main {
-  width: 1000px;
+    width: 1000px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
-
+  
 .etiqueta {
-  background: rgb(244, 161, 5);
-  padding: 2px 15px;
+    background: rgb(244, 161, 5);
+    padding: 2px 15px;
 }
-
+  
 footer {
-  margin-top: 50px;
+    margin-top: 50px;
 }
-
+  
 @media screen and (max-width: 1000px) {
-  main {
-    width: 100%;
-  }
+    main {
+        width: 100%;
+    }
 }
