@@ -12,7 +12,7 @@ console.log("Ejercicio b:", addressSubstring);
 
 // c. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring).
 var country = "Nueva Zelanda";
-var countrySubstring = country.substring(country.length - 5, country.length);
+var countrySubstring = country.substring(country.length - 5);
 console.log("Ejercicio c:", countrySubstring);
 
 // d. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra en mayúscula y las demás en minúscula. Guardar el resultado en una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +).
@@ -30,6 +30,6 @@ console.log("Ejercicio e:", cityIndex);
 var sentence = "empezando programacion";
 var sentenceIndex = sentence.indexOf(" ");
 var word1 = sentence.substring(0, sentenceIndex);
-var word2 = sentence.substring(sentenceIndex + 1, sentence.length);
-var text = word1.substring(0, 1).toUpperCase() + word1.substring(1, word1.length).toLowerCase() + " " + word2.substring(0, 1).toUpperCase() + word2.substring(1, word2.length).toLowerCase();
+var word2 = sentence.substring(sentenceIndex + 1);
+var text = word1.substring(0, 1).toUpperCase() + word1.substring(1).toLowerCase() + " " + word2.substring(0, 1).toUpperCase() + word2.substring(1).toLowerCase();
 console.log("Ejercicio f:", text);
