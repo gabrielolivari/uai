@@ -5,7 +5,7 @@ var email = "olivarigabriel@gmail.com";
 var emailUpperCase = email.toUpperCase();
 console.log("Ejercicio a:", emailUpperCase);
 
-// b. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring)
+// b. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).
 var address = "Av. Pellegrini 1200";
 var addressSubstring = address.substring(0, 5);
 console.log("Ejercicio b:", addressSubstring);
@@ -26,7 +26,7 @@ var cityIndex = city.indexOf(" ");
 console.log("Ejercicio e:", cityIndex);
 
 // f. Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio). Utilizar los métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas palabras en
-// mayúscula y las demás letras en minúscula (utilizar indexOf, substring,toUpperCase, toLowerCase y el operador +)
+// mayúscula y las demás letras en minúscula (utilizar indexOf, substring,toUpperCase, toLowerCase y el operador +).
 var sentence = "empezando programacion";
 var sentenceIndex = sentence.indexOf(" ");
 var word1 = sentence.substring(0, sentenceIndex);
