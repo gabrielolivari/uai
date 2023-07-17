@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP: Juego Simón Dice</title>
+  <script src="functions.js"></script>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Juego Simón</h1>
+  <main>
+    <section class="game">
+      <div class="game-content">
+        <div class="game-block button-0" id="button-0" onclick="clickButton(0)"></div>
+        <div class="game-block button-1" id="button-1" onclick="clickButton(1)"></div>
+      </div>
+      <div class="game-content">
+        <div class="game-block button-2" id="button-2" onclick="clickButton(2)"></div>
+        <div class="game-block button-3" id="button-3" onclick="clickButton(3)"></div>
+      </div>
+    </section>
+    <section class="score">
+      <h3>Puntaje: <span id="score">0</span></h3>
+      <h5>Errores: <span id="score-negative">0</span></h5>
+      <h5>Nivel: <span id="score-sequence">-</span></h5>
+      <h5>Tiempo: <span id="score-time">00:00:00</span></h5>
+      <button class="score-button start-sequence" type="button" onclick="addSequence()">Agregar secuencia</button>
+      <button class="score-button restart-game" type="button" onclick="restartGame()">Comenzar de nuevo</button>
+    </section>
+    <section class="rules">
+      <h3>Información:</h3>
+      <p>Para comenzar a jugar deberás hacer click en el botón "Iniciar secuencia". Con esto comenzará la primer secuencia, se pintará un color, acto seguido, deberás cliquear el color pintado, en caso de que sea correcto sumarás un punto.</p>
+      <p>Al finalizar la primer secuencia y cada secuencia siguiente, deberás apretar el botón "Iniciar secuencia" para comenzar una nueva, cada secuencia que comience iluminará un color más que la anterior secuencia, al finalizar la secuencia deberás hacer click en cada color en el mismo orden en que fue mostrada la secuencia, cada click correcto sumará un punto.</p>
+      <p>El nivel corresponde al número de secuencia en el que se encuentra el jugador.</p>
+      <p>El tiempo de juego se reiniciará cada vez que se comience de nuevo y se inicie la primer secuencia.</p>
+    </section>
+  </main>
+</body>
+</html>

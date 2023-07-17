@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  background: #000;
+  color: #FFF;
+  font-family: 'Raleway';
+}
+
+h1 {
+  text-align: center;
+  margin: 15px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+h5 {
+  margin-bottom: 2.5px;
+}
+
+.rules {
+  padding: 25px;
+  position: absolute;
+  border: 1px solid #FFF;
+  border-radius: 4px;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+}
+
+.rules p {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.score {
+  padding: 25px;
+  position: absolute;
+  border: 1px solid #FFF;
+  border-radius: 4px;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+}
+
+.score-button {
+  background: #FFF;
+  color: #000;
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.score-button:hover {
+  background: #efebeb;
+}
+
+.start-sequence {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.game {
+  width: 504px;
+  height: 504px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.game-content {
+  display: flex;
+}
+
+.game-content div {
+  height: 250px;
+  width: 250px;
+}
+
+.game-block {
+  margin: 2px;
+  cursor: pointer;
+}
+
+.game-content .button-0 {
+  background: #F00;
+  border-top-left-radius: 100%;
+}
+
+.game-content .button-1 {
+  background: #00F;
+  border-top-right-radius: 100%;
+}
+
+.game-content .button-2 {
+  background: #FFFF00;
+  border-bottom-left-radius: 100%;
+}
+
+.game-content .button-3 {
+  background: #0F0;
+  border-bottom-right-radius: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .score {
+    position: initial;
+    width: 290px;
+    margin: 25px auto;
+  }
+
+  .rules {
+    position: initial;
+    width: 290px;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .game {
+    width: 340px;
+    height: 340px;
+  }
+
+  .game-content div {
+    height: 166px;
+    width: 166px;
+  }
+}
