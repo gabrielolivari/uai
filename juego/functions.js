@@ -31,7 +31,6 @@ function startSequence(index) {
         startSequence(newIndex)
       }, 1500);
     } else {
-      console.log('jugar')
       playingSequence = false;
     }
   }, 1000);
