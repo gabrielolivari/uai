@@ -83,22 +83,22 @@ h5 {
   cursor: pointer;
 }
 
-.game-content .button-0 {
+.game-content .button-red {
   background: #F00;
   border-top-left-radius: 100%;
 }
 
-.game-content .button-1 {
+.game-content .button-blue {
   background: #00F;
   border-top-right-radius: 100%;
 }
 
-.game-content .button-2 {
+.game-content .button-yellow {
   background: #FFFF00;
   border-bottom-left-radius: 100%;
 }
 
-.game-content .button-3 {
+.game-content .button-green {
   background: #0F0;
   border-bottom-right-radius: 100%;
 }
