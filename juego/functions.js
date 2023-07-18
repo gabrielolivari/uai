@@ -23,7 +23,7 @@ function addSequence() {
 function startSequence(index) {
   playingSequence = true;
   document.getElementById('button-' + sequence[index]).style.opacity = 0.7
-  setTimeout(() => {
+  setTimeout(function() {
     document.getElementById('button-' + sequence[index]).style.opacity = 1
     var newIndex = index + 1
     if (newIndex < sequence.length) {
@@ -47,7 +47,7 @@ function clickButton(buttonNumber) {
         addError()
       }
       document.getElementById('button-' + buttonNumber).style.opacity = 0.7
-      setTimeout(() => {
+      setTimeout(function() {
         document.getElementById('button-' + buttonNumber).style.opacity = 1
       }, 250);
     }
